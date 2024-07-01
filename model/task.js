@@ -9,7 +9,7 @@ const taskSchema = new mongoose.Schema({
         type:String,
         required:true
     },
-    dueData:Date,
+    dueDate:Date,
     completed:{type:Boolean,default:false},
     recurring:{type:Boolean,default:false},
     recurringInterval:{type:String,enum:['daily','weekly','monthly']}
